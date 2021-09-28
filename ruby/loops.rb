@@ -2,17 +2,33 @@
 #     puts 'Repetindo a mensagem ' + i.to_s + ' vez (es).'
 # end
 
-init = 0
+########################################################
+#### While
 
-while init <= 10 do
-    puts 'Repetindo a mensagem ' + init.to_s + ' vez (es).'
-    puts format('Repetindo a mensagem %s vez (es)', init)
-    puts "Repetindo a mensagem #{init} vez (es)."
-    init += 1
-end
-
-
-
-# for item in (0 ... 10)
-#     puts 'Repetindo a mensagem ' + item.to_s + ' vez (es).'
+# init = 0
+# while init <= 10 do
+#     if init == 0 then
+#         puts "Repetindo a mensagem nenhuma vez."
+#         init += 1
+#     elsif init == 1 then
+#         puts "Repetindo a mensagem #{init} vez."
+#         init += 1
+#     else
+#         puts "Repetindo a mensagem #{init} vez (es)."
+#         init += 1
+#     end
 # end
+##################################################
+# ##### Estrutura For
+# for item in (0 ... 10)
+#     puts "Repetindo a mensagem #{item} vez (es)."
+# end
+
+##################################################
+### Arrays
+
+vingadores = ['Ironman', 'Hulk', 'Spiderman']
+
+vingadores.each do |v|
+    puts v
+end
